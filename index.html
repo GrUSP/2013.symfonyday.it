@@ -33,79 +33,10 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	<script>
-	function initialize_map() {
-	        var mapOptions = {
-	          zoom: 15,
-	          center: new google.maps.LatLng(45.06448847650592, 7.6572346687316895),
-	          mapTypeId: google.maps.MapTypeId.ROADMAP
-	        }
-	        var map = new google.maps.Map(document.getElementById('map_canvas'),
-	                                      mapOptions);
-
-	        var I3P = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06539781596831, 7.657513618469238),
-	            map: map,
-	            icon: 'img/marker_i3p.png',
-				title:"I3P"
-	        });
-			var hotel_sanpaolo = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.0598373, 7.6529137),
-	            map: map,
-	            icon: 'img/marker_hotel.png',
-				title:"Hotel Residence San Paolo"
-	        });
-			var stazione_portasusa = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.068641008917346, 7.6639509201049805),
-	            map: map,
-	            icon: 'img/marker_trasporti.png',
-				title:"Stazione Metro e Treni Porta Susa"
-	        });
-			var fermata_tram_tribunale = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.069232038276766, 7.660109996795654),
-	            map: map,
-	            icon: 'img/marker_trasporti.png',
-				title:"Fermata Autobus e Tram Palazzo di Giustizia"
-	        });
-			var fermata_tram_ferrucci = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06244240982845, 7.655389308929443),
-	            map: map,
-	            icon: 'img/marker_trasporti.png',
-				title:"Fermata Corso Peshiera/Ferrucci"
-	        });
-			var fermata_tram_ferrucci = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06577670314182, 7.655142545700073),
-	            map: map,
-	            icon: 'img/marker_trasporti.png',
-				title:"Fermata Corso Ferrucci/Bandiera"
-	        });
-			var pizzeria = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06510228222967, 7.654681205749512),
-	            map: map,
-	            icon: 'img/marker_ristoranti.png',
-				title:"Pizzeria Quelli Che Ben Pensano 2"
-	        });
-			var pizzeria_solitiamici = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06733769180998, 7.66270637512207),
-	            map: map,
-	            icon: 'img/marker_ristoranti.png',
-				title:"Ristorante Quattro Soldi"
-	        });
-			var pizzeria_solitiamici = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06497535380877, 7.659240961074829),
-	            map: map,
-	            icon: 'img/marker_ristoranti.png',
-				title:"Mensana - Mensa Studenti Politecnico"
-	        });
-
-	      }
-    </script>
-
 </head>
 
 
-<body onload="initialize_map()">
+<body>
 
 
 	<div id="wrapper">
@@ -130,7 +61,7 @@
 
                     <em class="plus"><img src="img/bg_plus.png" alt="bg_plus" width="12" height="12" /></em>
 
-                    <a id="logo_grusp_to" class="organizer_logo" href="http://torino.grusp.org/"><img src="img/logo_grusp_to.png" alt="logo_grusp_to" width="140" height="67" /><span>PHP User Group Torino </span></a></p>
+                    <a id="logo_grusp_ro" class="organizer_logo" href="http://roma.grusp.org/"><img src="img/pug_roma.png" alt="pug roma" width="296" height="66" /><span>PHP User Group Roma </span></a></p>
 
                     <h4>presenta</h4>
                 </div>
@@ -148,16 +79,18 @@
 
 
                 <div class="share">
-                    <!-- AddThis Button BEGIN -->
 					<h4>Share</h4>
 					<div class="addthis_wrapper">
-						<div class="addthis_toolbox addthis_default_style ">
-						<a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:width="120"></a>
-						<a class="addthis_button_tweet"></a>
-						<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-						</div>
-						<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4feae2dc05ce85fb"></script>
-						<!-- AddThis Button END -->
+                        <!-- AddThis Button BEGIN -->
+                        <div class="addthis_toolbox addthis_default_style ">
+                            <a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:width="120"></a>
+                            <a class="addthis_button_tweet"></a>
+                            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+                        </div>
+                        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-51ac880a04ea188f"></script>
+                        <!-- AddThis Button END -->
+
+
 					</div>
 				</div>
 				<div class="separator"></div>
